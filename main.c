@@ -16,7 +16,7 @@
  ******************************************************************************/
 #include <stdio.h>             /* Include standard input and output library for printf, printf, ... */
 #include <string.h>            /* For funtions such as strcpy(), strcmp(), NULL character */
-#include "quanlysinhvien.h"    /* Include header file for managing a list of student accounts */
+#include "account_manage.h"    /* Include header file for managing a list of student accounts */
 
 /*******************************************************************************
  * Code
