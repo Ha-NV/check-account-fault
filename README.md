@@ -5,8 +5,8 @@
 ### Check for errors in the 'account' variable:
 * If account > 10 characters --> LENGTH_INVALID error
 * If you enter an account with characters other than letters and numbers --> CHAR_INVALID error   
-* Thư viện sẽ gọi đến function tầng application (hàm main) để thông báo lỗi thông qua function pointer. 
-* Sử dụng enum để định nghĩa các mã lỗi.
+* The library will call the application layer (main function) to report errors through the function pointer.
+* Use enum to define error codes.
   
       typedef enum _statetype 
       { 
@@ -15,7 +15,7 @@
           LENGHT_INVALID 
       }status_enum_t; 
 
-* Hàm void RegisterCallback(func func_add) cho phép ứng dụng đăng ký function.
-* Hàm void Check_Account(char* ptr, uint8_t lenght) kiểm tra chuỗi người dùng vừa nhập. 
-* Function của người dùng được gọi thông qua function pointer phải có các tham số truyền vào là mã lỗi. 
-* Người dùng được phép nhập nhiều lần.
+* Function 'void RegisterCallback(func func_add)' allows the application to register functions.
+* Function 'void Check_Account(char* ptr, uint8_t lenght)' check the string the user just entered.
+* User functions called through function pointers must have parameters passed as error codes. 
+* Users are allowed to enter multiple times.
