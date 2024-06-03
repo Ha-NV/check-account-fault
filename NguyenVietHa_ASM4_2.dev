@@ -61,7 +61,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit2]
-FileName=quanlysinhvien.h
+FileName=account_manage.c
 CompileCpp=0
 Folder=
 Compile=1
@@ -71,7 +71,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit3]
-FileName=quanlysinhvien.c
+FileName=account_manage.h
 CompileCpp=0
 Folder=
 Compile=1
